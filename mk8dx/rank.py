@@ -116,11 +116,11 @@ class Rank:
     def get_ranks_from_text(cls, text: str, format: int, ranks: list[Rank] = []) -> list[Rank]:
         for t in text.split():
             rank: cls = cls.from_text(t)
-            if rank.validate(format, ranks):
+            if rank.validate(format=format, ranks=ranks):
                 ranks.append(rank)
         if len(ranks) + 1 == 12 // format:
             rank: cls = cls()
-            if rank.validate(format, ranks):
+            if rank.validate(format=format, ranks=ranks):
                 ranks.append(rank)
         return ranks
 
