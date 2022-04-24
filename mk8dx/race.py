@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from typing import Optional
-from data import Track
+from mk8dx.data import Track
 from rank import Rank
 
 

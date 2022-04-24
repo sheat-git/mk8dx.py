@@ -3,7 +3,7 @@ from __future__ import annotations
 import string
 from typing import Optional
 from race import Race
-from data import Track
+from mk8dx.data import Track
 
 
 class Mogi:
