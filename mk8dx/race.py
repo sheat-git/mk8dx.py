@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 from typing import Optional
-from mk8dx.data import Track
-from rank import Rank
+from .data import Track
+from .rank import Rank
 
 
 class Race:
