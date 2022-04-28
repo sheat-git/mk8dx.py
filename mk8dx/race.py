@@ -13,9 +13,9 @@ class Race:
         'track'
     )
 
-    def __init__(self, format: int, track: Optional[Track] = None) -> None:
+    def __init__(self, format: int, ranks: list[Rank], track: Optional[Track] = None) -> None:
         self.__format = format
-        self.__ranks: list[Rank] = []
+        self.__ranks: list[Rank] = ranks
         self.track: Optional[Track] = track
 
     @property
