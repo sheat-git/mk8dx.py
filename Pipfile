@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 jaconv = "*"
+python-dateutil = "*"
+aiohttp = "==3.8.1"
 
 [dev-packages]
 black = "*"
