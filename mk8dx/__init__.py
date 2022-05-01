@@ -1,6 +1,6 @@
 __title__ = 'mk8dx.py'
 __author__ = 'sheat'
-__version__ = '2.0.1'
+__version__ = '2.0.2'
 
 from .data import Track, Cup
 from .rank import Rank
