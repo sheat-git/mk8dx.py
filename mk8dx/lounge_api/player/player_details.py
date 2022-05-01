@@ -4,6 +4,7 @@ from typing import Any, Optional
 from enum import Enum
 from datetime import datetime
 from dateutil.parser import isoparse
+from ..rank import Rank
 
 
 class PlayerDetails:
@@ -125,7 +126,7 @@ class PlayerDetails:
             partner_average=data.get('partnerAverage'),
             mmr_changes=PlayerDetails.MmrChange.loads_list(data=data['mmrChanges']),
             name_history=PlayerDetails.NameChange.loads_list(data=data['nameHistory']),
-            rank=data['rank']
+            rank=Rank.from_name(data['rank'])
         )
 
     class MmrChange:
