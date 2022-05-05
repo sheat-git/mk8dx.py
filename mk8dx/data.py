@@ -347,6 +347,21 @@ class Track(Enum):
     def cup(self) -> Cup:
         return Cup(self.id // 4)
 
+    @property
+    def full_name(self) -> str:
+        if self.console is None:
+            return self.name
+        return f'{self.console.abbr} {self.name}'
+
+    @property
+    def full_name_ja(self) -> str:
+        if self.console is None:
+            return self.name_ja
+        console = self.console.abbr_ja
+        if console is None:
+            console = self.console.abbr
+        return f'{console} {self.name_ja}'
+
     @classmethod
     def from_nick(cls, nick: str) -> Optional[Track]:
         _nick = _translate(nick)
@@ -446,7 +461,7 @@ class Track(Enum):
         11,
         'Mount Wario',
         'ワリオスノーマウンテン',
-        'mw',
+        'MW',
         'ワリスノ',
         {'mw', 'ﾜﾘｵｽﾉｰﾏｳﾝﾃﾝ', 'ﾜﾘｽﾉ', 'ﾕｷﾔﾏ', '雪山', 'ｽﾉ', 'ﾕｷﾔﾏｳﾝﾃﾝ'}
     )
@@ -802,7 +817,7 @@ class Track(Enum):
         'トーキョースクランブル',
         'bTB',
         'トーキョー',
-        {'btb', 'tb', 'ﾄｰｷｮｰｽｸﾗﾝﾌﾞﾙ', 'ｽｸﾗﾝﾌﾞﾙ', 'ﾄｰｷｮｰ', 'ﾄｳｷｮｳ', 'ﾄｰｷｮｳ', 'ﾄｳｷｮｰ', '東京'},
+        {'btb', 'tb', 'tokyo', 'ﾄｰｷｮｰｽｸﾗﾝﾌﾞﾙ', 'ｽｸﾗﾝﾌﾞﾙ', 'ﾄｰｷｮｰ', 'ﾄｳｷｮｳ', 'ﾄｰｷｮｳ', 'ﾄｳｷｮｰ', '東京'},
         Console.TOUR
     )
     BSR = (
@@ -829,6 +844,5 @@ class Track(Enum):
         'ニンニンドージョー',
         'bNH',
         'ニンニン',
-        {'bnh', 'nh', 'ﾆﾝﾆﾝﾄﾞｰｼﾞｮｰ', 'ﾆﾝｼﾞｮｰ', 'ﾆﾝﾆﾝ'},
-        Console.TOUR
+        {'bnh', 'nh', 'ﾆﾝﾆﾝﾄﾞｰｼﾞｮｰ', 'ﾆﾝｼﾞｮｰ', 'ﾆﾝﾆﾝ'}
     )

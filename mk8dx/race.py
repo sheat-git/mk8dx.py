@@ -20,7 +20,7 @@ class Race:
 
     @property
     def ranks(self) -> list[Rank]:
-        return self.__ranks
+        return self.__ranks.copy()
 
     @property
     def format(self) -> int:
@@ -31,8 +31,7 @@ class Race:
         return list(map(lambda r: r.score, self.ranks))
 
     def is_valid(self) -> bool:
-        return len(self.ranks) == 12 // len(self.format)
+        return len(self.ranks) == 12 // self.format
 
     def add_ranks_from_text(self, text: str) -> None:
-        ranks = Rank.get_ranks_from_text(text=text, format=self.format, ranks=self.ranks)
-        self.__ranks.extend(ranks)
+        self.__ranks = Rank.get_ranks_from_text(text=text, format=self.format, ranks=self.ranks)

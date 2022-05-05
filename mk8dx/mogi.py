@@ -33,7 +33,7 @@ class Mogi:
 
     @property
     def sum_scores(self) -> list[int]:
-        sum_scores: list[int] = [0]*(12//format)
+        sum_scores: list[int] = [0]*(12//self.format)
         for race in self.races:
             if race.is_valid():
                 for i, score in enumerate(race.scores):

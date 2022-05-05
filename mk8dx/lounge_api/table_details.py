@@ -108,7 +108,7 @@ class TableDetails:
             return list(map(lambda t: cls.loads(t), data))
 
     class Score:
-        
+
         __slots__ = (
             'score',
             'multiplier',

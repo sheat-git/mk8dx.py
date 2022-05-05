@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from typing import Optional, Any, Union
-from ..rank import Rank
+from typing import Optional, Any
+from .rank import Rank
 
 
 class Leaderboard:
@@ -25,7 +25,7 @@ class Leaderboard:
             total_players=data['totalPlayers'],
             data=Leaderboard.Player.loads_list(data=data.get('data'))
         )
-    
+
     class Player:
 
         __slots__ = (

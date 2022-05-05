@@ -41,7 +41,7 @@ class PlayerList:
             self.mmr: Optional[int] = mmr
             self.discord_id: Optional[str] = discord_id
             self.events_played: int = events_played
-        
+
         @staticmethod
         def loads(data: dict[str, Any]) -> PlayerList.Player:
             return PlayerList.Player(
@@ -51,7 +51,7 @@ class PlayerList:
                 discord_id=data.get('discordId'),
                 events_played=data['eventsPlayed']
             )
-        
+
         @classmethod
         def loads_list(cls, data: list[dict[str, Any]]) -> list[PlayerList.Player]:
             return list(map(lambda p: cls.loads(p), data))

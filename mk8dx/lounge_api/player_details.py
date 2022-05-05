@@ -4,7 +4,7 @@ from typing import Any, Optional
 from enum import Enum
 from datetime import datetime
 from dateutil.parser import isoparse
-from ..rank import Rank
+from .rank import Rank
 
 
 class PlayerDetails:
