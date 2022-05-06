@@ -5,7 +5,7 @@ import re
 
 _SCORES = (15, 12, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
 _TRANSLATE_TABLE = dict(zip(map(ord, '１２３４５６７８９０ー＋　'), '1234567890-+ '))
-_RE = re.compile(r'[^0-9\-\ ]')
+_RE = re.compile(r'[^0-9\-\ +]')
 
 
 class Rank:
