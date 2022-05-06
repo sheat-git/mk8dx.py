@@ -1,4 +1,3 @@
-import re
 from setuptools import setup
 
 
@@ -6,21 +5,6 @@ from setuptools import setup
 requirements = []
 with open("requirements.txt") as f:
     requirements = f.read().splitlines()
-
-# Version Info
-version = ""
-with open("mk8dx/__init__.py") as f:
-
-    search = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE)
-
-    if search is not None:
-        version = search.group(1)
-
-    else:
-        raise RuntimeError("Could not grab version string")
-
-if not version:
-    raise RuntimeError("version is not set")
 
 # README
 readme = ""
@@ -31,7 +15,7 @@ setup(
     name='mk8dx',
     author='sheat',
     url='https://github.com/sheat-git/mk8dx.py',
-    version=version,
+    version='1.0.1',
     packages=['mk8dx', 'mk8dx.lounge_api'],
     license='MIT',
     description='To help to develop something about mk8dx',
