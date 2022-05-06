@@ -31,11 +31,6 @@ async def get(path: str, params: dict = {}) -> Optional[dict[str, Any]]:
     async with aiohttp.ClientSession() as session:
         async with session.get(BASE_URL + path, params=params) as response:
             if response.status != 200:
-                if response.status == 404:
-                    raise LoungeAPIError(404, ['Not Found'])
-                if response.status == 400:
-                    errors = response.json().get('errors', {})
-                    raise LoungeAPIError(400, errors.values())
                 return None
             return await response.json()
 
