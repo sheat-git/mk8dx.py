@@ -7,7 +7,7 @@ test-deploy:
 	twine upload -r testpypi dist/*
 
 .PHONY: build
-build: clean
+build:
 	python setup.py bdist_wheel
 
 .PHONY: clean
