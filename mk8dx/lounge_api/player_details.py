@@ -50,7 +50,7 @@ class PlayerDetails:
         losses_last_ten: int,
         mmr_changes: list[PlayerDetails.MmrChange],
         name_history: list[PlayerDetails.NameChange],
-        rank: str,
+        rank: Rank,
         country_code: Optional[str] = None,
         country_name: Optional[str] = None,
         switch_fc: Optional[str] = None,
@@ -92,7 +92,7 @@ class PlayerDetails:
         self.partner_average: Optional[float] = partner_average
         self.mmr_changes: list[PlayerDetails.MmrChange] = mmr_changes
         self.name_history: list[PlayerDetails.NameChange] = name_history
-        self.rank: str = rank
+        self.rank: Rank = rank
 
     @property
     def win_loss_last_ten(self) -> str:
