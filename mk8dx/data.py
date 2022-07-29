@@ -605,8 +605,8 @@ class Track(Enum):
         'Dry Dry Desert',
         'カラカラさばく',
         'rDDD',
-        'カラさば',
-        {'rddd', 'ｶﾗｶﾗｻﾊﾞｸ', 'ｶﾗｻﾊﾞ', 'ｻﾊﾞｸ'},
+        'GCカラさば',
+        {'rddd', 'ｶﾗｶﾗｻﾊﾞｸ', 'ｶﾗｻﾊﾞ', 'ｻﾊﾞｸ', 'gcｶﾗ', 'gcｶﾗｻﾊﾞ', 'gcｻﾊﾞ'},
         Console.GCN
     )
     RDP3 = (
@@ -825,7 +825,7 @@ class Track(Enum):
         'Shroom Ridge',
         'キノコリッジウェイ',
         'bSR',
-        'キコリ',
+        'リッジ',
         {'bsr', 'sr', 'ｷﾉｺﾘｯｼﾞｳｪｲ', 'ｷﾉｺﾘｯｼﾞ', 'ﾘｯｼﾞｳｪｲ', 'ｷﾉｺﾘ', 'ｷｺﾘ', 'ﾘｯｼﾞ'},
         Console.DS
     )
@@ -846,4 +846,75 @@ class Track(Enum):
         'ニンニン',
         {'bnh', 'nh', 'ﾆﾝﾆﾝﾄﾞｰｼﾞｮｰ', 'ﾆﾝｼﾞｮｰ', 'ﾆﾝﾆﾝ'},
         Console.TOUR
+    )
+    BNYM = (
+        56,
+        'New Youk Minute',
+        'ニューヨークドリーム',
+        'bNYM',
+        'ニューヨーク',
+        {'bnym', 'nym', 'ﾆｭｰﾖｰｸﾄﾞﾘｰﾑ', 'ﾆｭｰﾖｰｸ', 'ﾆｭｰﾄﾞﾘ', 'ny'},
+        Console.TOUR
+    )
+    BMC3 = (
+        57,
+        'Mario Circuit 3',
+        'マリオサーキット3',
+        'bMC3',
+        'SFCマリサ',
+        {'bmc3', 'mc3', 'bmc', 'ﾏﾘｵｻｰｷｯﾄ3', 'ﾏﾘｻ3', 'sfcﾏﾘｻ', 'sfcﾏﾘｵｻｰｷｯﾄ', 'sfcﾏﾘｻ3', 'sfcﾏﾘｵｻｰｷｯﾄ3'},
+        Console.SNES
+    )
+    BKD = (
+        58,
+        'Kalimari Desert',
+        'カラカラさばく',
+        'bKD',
+        '64カラさば',
+        {'bkd', 'kd', '64ｶﾗｻﾊﾞ', '64ｶﾗ', '64ｻﾊﾞ'},
+        Console.N64
+    )
+    BWP = (
+        59,
+        'Waluigi Pinball',
+        'ワルイージピンボール',
+        'bWP',
+        'ワルピン',
+        {'bwp', 'ﾜﾙｲｰｼﾞﾋﾟﾝﾎﾞｰﾙ', 'ﾜﾙﾋﾟﾝ', 'ﾋﾟﾝﾎﾞｰﾙ'},
+        Console.DS
+    )
+    BSS = (
+        60,
+        'Sydney Sprint',
+        'シドニーサンシャイン',
+        'bSS',
+        'シドニー',
+        {'bss', 'ss', 'ｼﾄﾞﾆｰｻﾝｼｬｲﾝ', 'ｼﾄﾞﾆｰ'},
+        Console.TOUR
+    )
+    BSL = (
+        61,
+        'Snow Land',
+        'スノーランド',
+        'bSL',
+        'スノラン',
+        {'bsl', 'ｽﾉｰﾗﾝﾄﾞ', 'ｽﾉﾗﾝ'},
+        Console.GBA
+    )
+    BMG = (
+        62,
+        'Mushroom Gorge',
+        'キノコキャニオン',
+        'bMG',
+        'キノキャニ',
+        {'bmg', 'ｷﾉｺｷｬﾆｵﾝ', 'ｷﾉｷｬﾆ', 'ｷｬﾆｵﾝ'},
+        Console.WII
+    )
+    BSHS = (
+        63,
+        'Sky-High Sundae',
+        'アイスビルディング',
+        'bSHS',
+        'アイス',
+        {'bshs', 'shs', 'ｱｲｽﾋﾞﾙﾃﾞｨﾝｸﾞ', 'ｱｲｽ'}
     )
