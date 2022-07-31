@@ -15,7 +15,7 @@ setup(
     name='mk8dx',
     author='sheat',
     url='https://github.com/sheat-git/mk8dx.py',
-    version='1.0.7',
+    version='1.0.8',
     packages=['mk8dx', 'mk8dx.lounge_api'],
     license='MIT',
     description='To help to develop something about mk8dx',
