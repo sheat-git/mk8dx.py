@@ -214,18 +214,15 @@ class PlayerDetails:
             self,
             name: str,
             changed_on: datetime,
-            season: int
         ) -> None:
             self.name: str = name
             self.changed_on: datetime = changed_on
-            self.season: int = season
 
         @staticmethod
         def loads(data: dict[str, Any]) -> PlayerDetails.NameChange:
             return PlayerDetails.NameChange(
                 name=data['name'],
-                changed_on=isoparse(data['changedOn']),
-                season=data['season']
+                changed_on=isoparse(data['changedOn'])
             )
 
         @classmethod
