@@ -31,7 +31,7 @@ class Rank:
             division=Rank.Division(data['division']),
             level=data.get('level')
         )
-    
+
     @staticmethod
     def from_name(name: str) -> Optional[Rank]:
         if ' ' in name:
@@ -40,10 +40,10 @@ class Rank:
                 return None
             return Rank(division=Rank.Division(division), level=int(level))
         return Rank(division=Rank.Division(name))
-    
+
     def __str__(self) -> str:
         return self.name
-    
+
     class Division(Enum):
         GRANDMASTER = 'Grandmaster'
         MASTER = 'Master'
