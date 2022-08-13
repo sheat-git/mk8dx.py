@@ -378,10 +378,15 @@ class Track(Enum):
             console = self.console.abbr
         return f'{console} {self.name_ja}'
 
-    @classmethod
-    def from_nick(cls, nick: str) -> Optional[Track]:
+    @staticmethod
+    def from_nick(nick: str) -> Optional[Track]:
         _nick = _translate(nick)
         return _ALL_TRACK_DICT.get(_nick)
+
+    @staticmethod
+    def from_initial(initial: str) -> list[Track]:
+        _initial = _translate(initial)
+        return [track for track in Track if sum(map(lambda n: n.startswith(_initial), track.nicks)) > 0]
 
     MKS = (
         0,
