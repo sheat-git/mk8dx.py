@@ -12,6 +12,8 @@ _TRANSLATE_TABLE = \
     | Z2H_DK \
     | {k: v.lower() for k, v in Z2H_A.items()}
 
+_ALL_TRACK_DICT = {}
+
 
 def _translate(text: str):
     return text.translate(_TRANSLATE_TABLE)
@@ -313,7 +315,7 @@ class Track(Enum):
         'name_ja',
         'abbr',
         'abbr_ja',
-        'nicks',
+        '_nicks',
         'console'
     )
 
@@ -338,6 +340,20 @@ class Track(Enum):
         self.abbr_ja: str = abbr_ja
         self.nicks: set[str] = nicks
         self.console: Optional[Console] = console
+
+    @property
+    def nicks(self) -> set[str]:
+        return self._nicks
+
+    @nicks.setter
+    def nicks(self, nicks: set[str]) -> None:
+        global _ALL_TRACK_DICT
+        if hasattr(self, '_nicks'):
+            for nick in self._nicks:
+                _ALL_TRACK_DICT.pop(nick)
+        for nick in nicks:
+            _ALL_TRACK_DICT[nick] = self
+        self._nicks = nicks
 
     @property
     def id(self) -> int:
@@ -365,9 +381,7 @@ class Track(Enum):
     @classmethod
     def from_nick(cls, nick: str) -> Optional[Track]:
         _nick = _translate(nick)
-        for track in cls:
-            if _nick in track.nicks:
-                return track
+        return _ALL_TRACK_DICT.get(_nick)
 
     MKS = (
         0,
@@ -849,7 +863,7 @@ class Track(Enum):
     )
     BNYM = (
         56,
-        'New Youk Minute',
+        'New York Minute',
         'ニューヨークドリーム',
         'bNYM',
         'ニューヨーク',
