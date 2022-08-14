@@ -40,6 +40,7 @@ async def get_player(
     name=None,
     mkc_id=None,
     discord_id=None,
+    fc=None,
     season=None
 ) -> Optional[Player]:
     params = {}
@@ -51,6 +52,8 @@ async def get_player(
         params['mkcId'] = mkc_id
     elif discord_id is not None:
         params['discordId'] = discord_id
+    elif fc is not None:
+        params['fc'] = fc
     else:
         return None
     if season is not None:
