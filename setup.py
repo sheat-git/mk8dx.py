@@ -1,6 +1,5 @@
 from setuptools import setup
 
-
 # Requirements
 requirements = []
 with open("requirements.txt") as f:
@@ -15,7 +14,6 @@ setup(
     name='mk8dx',
     author='sheat',
     url='https://github.com/sheat-git/mk8dx.py',
-    version='1.0.11',
     packages=['mk8dx', 'mk8dx.lounge_api'],
     license='MIT',
     description='To help to develop something about mk8dx',
