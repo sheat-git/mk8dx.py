@@ -14,6 +14,8 @@ setup(
     name='mk8dx',
     author='sheat',
     url='https://github.com/sheat-git/mk8dx.py',
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
     packages=['mk8dx', 'mk8dx.lounge_api'],
     license='MIT',
     description='To help to develop something about mk8dx',
