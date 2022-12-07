@@ -1,4 +1,4 @@
-name: Build and Publish
+name: Publish
 
 on:
   push:
@@ -6,8 +6,7 @@ on:
       - "v*"
 
 jobs:
-  build-n-publish:
-    name: Build and publish Python 🐍 distributions 📦 to PyPI
+  publish:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
