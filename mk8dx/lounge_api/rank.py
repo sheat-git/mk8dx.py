@@ -48,6 +48,7 @@ class Rank:
         GRANDMASTER = 'Grandmaster'
         MASTER = 'Master'
         DIAMOND = 'Diamond'
+        RUBY = 'Ruby'
         SAPPHIRE = 'Sapphire'
         PLATINUM = 'Platinum'
         GOLD = 'Gold'
