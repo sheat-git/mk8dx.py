@@ -406,7 +406,7 @@ class Track(Enum):
     )
     SSC = (
         2,
-        'Sweet Sweet Canion',
+        'Sweet Sweet Canyon',
         'スイーツキャニオン',
         'SSC',
         'スイキャニ',
@@ -630,7 +630,7 @@ class Track(Enum):
     )
     RDP3 = (
         29,
-        'Dounut Plains 3',
+        'Donut Plains 3',
         'ドーナツへいや3',
         'rDP3',
         'へいや',
@@ -724,7 +724,8 @@ class Track(Enum):
         'レインボーロード',
         'rRRd',
         '64虹',
-        {'rrrd', 'rrd', '64ﾚｲﾝﾎﾞｰﾛｰﾄﾞ', '64ﾆｼﾞ', '64虹', 'ﾛｸﾖﾝ'}
+        {'rrrd', 'rrd', '64ﾚｲﾝﾎﾞｰﾛｰﾄﾞ', '64ﾆｼﾞ', '64虹', 'ﾛｸﾖﾝ'},
+        Console.N64
     )
     DWGM = (
         40,
@@ -996,8 +997,7 @@ class Track(Enum):
         'メリーメリーマウンテン',
         'bMM',
         'メリー',
-        {'bmm', 'mm', 'ﾒﾘｰﾒﾘｰﾏｳﾝﾃﾝ', 'ﾒﾘﾏ', 'ﾒﾘｰﾒﾘｰ', 'ﾒﾘｰ', 'ﾒﾘﾔﾏ', 'ﾒﾘ山'},
-        Console.TOUR
+        {'bmm', 'mm', 'ﾒﾘｰﾒﾘｰﾏｳﾝﾃﾝ', 'ﾒﾘﾏ', 'ﾒﾘｰﾒﾘｰ', 'ﾒﾘｰ', 'ﾒﾘﾔﾏ', 'ﾒﾘ山'}
     )
     BRR = (
         71,
