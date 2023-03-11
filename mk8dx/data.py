@@ -881,7 +881,7 @@ class Track(Enum):
         'マリオサーキット3',
         'bMC3',
         'SFCマリサ',
-        {'bmc3', 'mc3', 'bmc', 'ﾏﾘｵｻｰｷｯﾄ3', 'ﾏﾘｻ3', 'sfcﾏﾘｻ', 'sfcﾏﾘｵｻｰｷｯﾄ', 'sfcﾏﾘｻ3', 'sfcﾏﾘｵｻｰｷｯﾄ3'},
+        {'bmc3', 'mc3', 'ﾏﾘｵｻｰｷｯﾄ3', 'ﾏﾘｻ3', 'sfcﾏﾘｻ', 'sfcﾏﾘｵｻｰｷｯﾄ', 'sfcﾏﾘｻ3', 'sfcﾏﾘｵｻｰｷｯﾄ3'},
         Console.SNES
     )
     BKD = (
@@ -908,7 +908,7 @@ class Track(Enum):
         'シドニーサンシャイン',
         'bSS',
         'シドニー',
-        {'bss', 'ss', 'ｼﾄﾞﾆｰｻﾝｼｬｲﾝ', 'ｼﾄﾞﾆｰ'},
+        {'bss', 'ss', 'bsys', 'sys', 'ｼﾄﾞﾆｰｻﾝｼｬｲﾝ', 'ｼﾄﾞﾆｰ'},
         Console.TOUR
     )
     BSL = (
@@ -1007,4 +1007,75 @@ class Track(Enum):
         '3DS虹',
         {'brr', '3dsﾆｼﾞ', '3ds虹', '3ds'},
         Console.N3DS
+    )
+    BAD = (
+        72,
+        'Amsterdam Drift',
+        'アムステルダムブルーム',
+        'bAD',
+        'アムステルダム',
+        {'bad', 'ad', 'amsterdam', 'ｱﾑｽﾃﾙﾀﾞﾑﾌﾞﾙｰﾑ', 'ｱﾑｽﾃﾙﾀﾞﾑ', 'ｱﾑｽ', 'ﾌﾞﾙｰﾑ'},
+        Console.TOUR
+    )
+    BRP = (
+        73,
+        'Riverside Park',
+        'リバーサイドパーク',
+        'bRP',
+        'リバパ',
+        {'brp', 'rp', 'ﾘﾊﾞｰｻｲﾄﾞﾊﾟｰｸ', 'ﾘﾊﾞｰｻｲﾄﾞ', 'ﾘﾊﾞﾊﾟ'},
+        Console.GBA
+    )
+    BDKS = (
+        74,
+        'DK Summit',
+        'DKスノーボードクロス',
+        'bDKS',
+        'スノボ',
+        {'bdks', 'dks', 'summit', 'dkｽﾉｰﾎﾞｰﾄﾞｸﾛｽ', 'ｽﾉｰﾎﾞｰﾄﾞｸﾛｽ', 'ｽﾉﾎﾞｸﾛｽ', 'ｽﾉﾎﾞ'},
+        Console.WII
+    )
+    BYI = (
+        75,
+        'Yoshi\'s Island',
+        'ヨッシーアイランド',
+        'bYI',
+        'ヨシアイ',
+        {'byi', 'yi', 'ﾖｯｼｰｱｲﾗﾝﾄﾞ', 'ﾖｼｱｲ'}
+    )
+    BBR = (
+        76,
+        'Bangkok Rush',
+        'バンコクラッシュ',
+        'bBR',
+        'バンコク',
+        {'bbr', 'br', 'bangkok', 'ﾊﾞﾝｺｸﾗｯｼｭ', 'ﾊﾞﾝｺｸ'},
+        Console.TOUR
+    )
+    BMC = (
+        77,
+        'Mario Circuit',
+        'マリオサーキット',
+        'bMC',
+        'DSマリサ',
+        {'bmc', 'dsﾏﾘｵｻｰｷｯﾄ', 'dsﾏﾘｻ'},
+        Console.DS
+    )
+    BWS = (
+        78,
+        'Waluigi Stadium',
+        'ワルイージスタジアム',
+        'bWS',
+        'ワルスタ',
+        {'bws', 'ﾜﾙｲｰｼﾞｽﾀｼﾞｱﾑ', 'ﾜﾙｽﾀ'},
+        Console.GCN
+    )
+    BSIS = (
+        79,
+        'Singapore Speedway',
+        'シンガポールスプラッシュ',
+        'bSiS',
+        'シンガポール',
+        {'bsis', 'sis', 'singapore', 'ｼﾝｶﾞﾎﾟｰﾙｽﾌﾟﾗｯｼｭ', 'ｼﾝｶﾞﾎﾟｰﾙ'},
+        Console.TOUR
     )
