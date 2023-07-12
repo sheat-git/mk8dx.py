@@ -1005,7 +1005,7 @@ class Track(Enum):
         'レインボーロード',
         'bRR',
         '3DS虹',
-        {'brr', '3dsﾆｼﾞ', '3ds虹', '3ds'},
+        {'brr', '3dsﾆｼﾞ', '3ds虹', '7ﾆｼﾞ', '7虹'},
         Console.N3DS
     )
     BAD = (
@@ -1070,12 +1070,83 @@ class Track(Enum):
         {'bws', 'ﾜﾙｲｰｼﾞｽﾀｼﾞｱﾑ', 'ﾜﾙｽﾀ'},
         Console.GCN
     )
-    BSIS = (
+    BSSY = (
         79,
         'Singapore Speedway',
         'シンガポールスプラッシュ',
-        'bSiS',
+        'bSSy',
         'シンガポール',
-        {'bsis', 'sis', 'singapore', 'ｼﾝｶﾞﾎﾟｰﾙｽﾌﾟﾗｯｼｭ', 'ｼﾝｶﾞﾎﾟｰﾙ'},
+        {'bssy', 'ssy', 'bsis', 'sis', 'singapore', 'ｼﾝｶﾞﾎﾟｰﾙｽﾌﾟﾗｯｼｭ', 'ｼﾝｶﾞﾎﾟｰﾙ'},
+        Console.TOUR
+    )
+    BADA = (
+        80,
+        'Athens Dash',
+        'アテネポリス',
+        'bADa',
+        'アテネ',
+        {'bada', 'ada', 'athens', 'ｱﾃﾈﾎﾟﾘｽ', 'ｱﾃﾈ'},
+        Console.TOUR
+    )
+    BDC = (
+        81,
+        'Daisy Cruiser',
+        'デイジークルーザー',
+        'bDC',
+        'デイクル',
+        {'bdc', 'dc', 'ﾃﾞｲｼﾞｰｸﾙｰｻﾞｰ', 'ﾃﾞｲｸﾙ'},
+        Console.GCN
+    )
+    BMH = (
+        82,
+        'Moonview Highway',
+        'ムーンリッジ&ハイウェイ',
+        'bMH',
+        'ムーンリッジ',
+        {'bmh', 'mh', 'ﾑｰﾝﾘｯｼﾞ', 'ﾑﾝﾊｲ', 'ﾑｰﾝﾊｲ'},
+        Console.WII
+    )
+    BSPS = (
+        83,
+        'Squeaky Clean Sprint',
+        'シャボンロード',
+        'bSCS',
+        'シャボン',
+        {'bscs', 'scs', 'ｼｬﾎﾞﾝﾛｰﾄﾞ', 'ｼｬﾎﾞﾝ', 'ｼｬﾎﾞﾛ'}
+    )
+    BLAL = (
+        84,
+        'Los Angeles Laps',
+        'ロサンゼルスコースト',
+        'bLAL',
+        'ロサンゼルス',
+        {'blal', 'lal', 'losangeles', 'los', 'ﾛｻﾝｾﾞﾙｽｺｰｽﾄ', 'ﾛｻﾝｾﾞﾙｽ', 'ﾛｽ'},
+        Console.TOUR
+    )
+    BSW = (
+        85,
+        'Sunset Wilds',
+        'サンセットこうや',
+        'bSW',
+        'サンセット',
+        {'bsw', 'sw', 'ｻﾝｾｯﾄｺｳﾔ', 'ｻﾝｾｯﾄ', 'ｺｳﾔ', 'ｻﾝｾ'},
+        Console.GBA
+    )
+    BKC = (
+        86,
+        'Koopa Cape',
+        'ノコノコみさき',
+        'bKC',
+        'ノコノコ',
+        {'bkc', 'kc', 'ﾉｺﾉｺﾐｻｷ', 'ﾉｺﾉｺ', 'ﾉｺﾐｻ'},
+        Console.WII
+    )
+    BVV = (
+        87,
+        'Vancouver Velocity',
+        'バンクーバーバレー',
+        'bVV',
+        'バンクーバー',
+        {'bvv', 'vv', 'vancouver', 'ﾊﾞﾝｸｰﾊﾞｰﾊﾞﾚｰ', 'ﾊﾞﾝｸｰﾊﾞｰ'},
         Console.TOUR
     )
