@@ -720,7 +720,7 @@ class Track(Enum):
     )
     RRRD = (
         39,
-        'Rainbow Road',
+        'N64 Rainbow Road',
         'レインボーロード',
         'rRRd',
         '64虹',
@@ -738,7 +738,7 @@ class Track(Enum):
     )
     DRR = (
         41,
-        'Rainbow Road',
+        'SNES Rainbow Road',
         'レインボーロード',
         'dRR',
         'SFC虹',
@@ -999,13 +999,13 @@ class Track(Enum):
         'メリー',
         {'bmm', 'mm', 'ﾒﾘｰﾒﾘｰﾏｳﾝﾃﾝ', 'ﾒﾘﾏ', 'ﾒﾘｰﾒﾘｰ', 'ﾒﾘｰ', 'ﾒﾘﾔﾏ', 'ﾒﾘ山'}
     )
-    BRR = (
+    BRR7 = (
         71,
-        'Rainbow Road',
+        '3DS Rainbow Road',
         'レインボーロード',
-        'bRR',
+        'bRR7',
         '3DS虹',
-        {'brr', '3dsﾆｼﾞ', '3ds虹', '7ﾆｼﾞ', '7虹'},
+        {'brr7', '3dsﾆｼﾞ', '3ds虹', '7ﾆｼﾞ', '7虹'},
         Console.N3DS
     )
     BAD = (
@@ -1079,13 +1079,13 @@ class Track(Enum):
         {'bssy', 'ssy', 'bsis', 'sis', 'singapore', 'ｼﾝｶﾞﾎﾟｰﾙｽﾌﾟﾗｯｼｭ', 'ｼﾝｶﾞﾎﾟｰﾙ'},
         Console.TOUR
     )
-    BADA = (
+    BATD = (
         80,
         'Athens Dash',
         'アテネポリス',
-        'bADa',
+        'bAtD',
         'アテネ',
-        {'bada', 'ada', 'athens', 'ｱﾃﾈﾎﾟﾘｽ', 'ｱﾃﾈ'},
+        {'batd', 'ada', 'athens', 'ｱﾃﾈﾎﾟﾘｽ', 'ｱﾃﾈ'},
         Console.TOUR
     )
     BDC = (
