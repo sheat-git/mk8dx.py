@@ -1219,5 +1219,5 @@ class Track(Enum):
         'bRR',
         'Wii虹',
         {'brr', 'brrw', 'rrw', 'wiiﾆｼﾞ', 'wiiﾚｲﾝﾎﾞｰﾛｰﾄﾞ', 'wii虹', 'wiiﾆｼﾞ', 'ｳｨｰﾆｼﾞ'},
-        Console.Wii
+        Console.WII
     )
