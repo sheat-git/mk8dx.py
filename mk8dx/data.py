@@ -1004,8 +1004,8 @@ class Track(Enum):
         '3DS Rainbow Road',
         'レインボーロード',
         'bRR7',
-        '3DS虹',
-        {'brr7', '3dsﾆｼﾞ', '3ds虹', '7ﾆｼﾞ', '7虹'},
+        '7虹',
+        {'brr7', 'rr7', '3dsﾆｼﾞ', '3ds虹', '7ﾆｼﾞ', '7虹'},
         Console.N3DS
     )
     BAD = (
@@ -1085,7 +1085,7 @@ class Track(Enum):
         'アテネポリス',
         'bAtD',
         'アテネ',
-        {'batd', 'ada', 'athens', 'ｱﾃﾈﾎﾟﾘｽ', 'ｱﾃﾈ'},
+        {'batd', 'atd', 'bada', 'ada', 'athens', 'ｱﾃﾈﾎﾟﾘｽ', 'ｱﾃﾈ'},
         Console.TOUR
     )
     BDC = (
@@ -1149,4 +1149,75 @@ class Track(Enum):
         'バンクーバー',
         {'bvv', 'vv', 'vancouver', 'ﾊﾞﾝｸｰﾊﾞｰﾊﾞﾚｰ', 'ﾊﾞﾝｸｰﾊﾞｰ'},
         Console.TOUR
+    )
+    BRA = (
+        88,
+        'Rome Avanti',
+        'ローマアバンティ',
+        'bRA',
+        'ローマ',
+        {'bra', 'ra', 'rome', 'ﾛｰﾏｱﾊﾞﾝﾃｨ', 'ﾛｰﾏ'},
+        Console.TOUR
+    )
+    BDKM = (
+        89,
+        'DK Mountain',
+        'DKマウンテン',
+        'bDKM',
+        'DKマウンテン',
+        {'bdkm', 'dkm', 'dkﾏｳﾝﾃﾝ', 'dkﾔﾏ', 'dk山'},
+        Console.GCN
+    )
+    BDCI = (
+        90,
+        'Daisy Circuit',
+        'デイジーサーキット',
+        'bDCi',
+        'デイサ',
+        {'bdci', 'dci', 'ﾃﾞｲｼﾞｰｻｰｷｯﾄ', 'ﾃﾞｲｻ'},
+        Console.WII
+    )
+    BPPC = (
+        91,
+        'Piranha Plant Cove',
+        'パックンしんでん',
+        'bPPC',
+        'しんでん',
+        {'bppc', 'ppc', 'ﾊﾟｯｸﾝｼﾝﾃﾞﾝ', 'ﾊﾟｸｼﾝ', 'ｼﾝﾃﾞﾝ'}
+    )
+    BMD = (
+        92,
+        'Madrid Drive',
+        'マドリードグランデ',
+        'bMD',
+        'マドリード',
+        {'bmd', 'md', 'madrid', 'ﾏﾄﾞﾘｰﾄﾞｸﾞﾗﾝﾃﾞ', 'ﾏﾄﾞﾘｰﾄﾞ'},
+        Console.TOUR
+    )
+    BRIW = (
+        93,
+        'Rosalina\'s Ice World',
+        'ロゼッタプラネット',
+        'bRIW',
+        'ロゼプラ',
+        {'briw', 'riw', 'ﾛｾｯﾀﾌﾟﾗﾈｯﾄ', 'ﾛｾﾌﾟﾗ'},
+        Console.N3DS
+    )
+    BBC3 = (
+        94,
+        'Bowser\'s Castle 3',
+        'クッパじょう3',
+        'bBC3',
+        'クッパじょう',
+        {'bbc3', 'bbc', 'bc3', 'ｸｯﾊﾟｼﾞｮｳ3', 'ｸｯﾊﾟｼﾞｮｳ', 'ｸｯﾊﾟ城'},
+        Console.SNES
+    )
+    BRR = (
+        95,
+        'Wii Rainbow Road',
+        'レインボーロード',
+        'bRR',
+        'Wii虹',
+        {'brr', 'brrw', 'rrw', 'wiiﾆｼﾞ', 'wiiﾚｲﾝﾎﾞｰﾛｰﾄﾞ', 'wii虹', 'wiiﾆｼﾞ', 'ｳｨｰﾆｼﾞ'},
+        Console.WII
     )
