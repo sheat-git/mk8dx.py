@@ -1173,8 +1173,9 @@ class Track(Enum):
         'Daisy Circuit',
         'デイジーサーキット',
         'bDCi',
+        'bDCt',
         'デイサ',
-        {'bdci', 'dci', 'ﾃﾞｲｼﾞｰｻｰｷｯﾄ', 'ﾃﾞｲｻ'},
+        {'bdci', 'dci','bdct', 'ﾃﾞｲｼﾞｰｻｰｷｯﾄ', 'ﾃﾞｲｻ'},
         Console.WII
     )
     BPPC = (
