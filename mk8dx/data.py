@@ -1168,13 +1168,13 @@ class Track(Enum):
         {'bdkm', 'dkm', 'dkﾏｳﾝﾃﾝ', 'dkﾔﾏ', 'dk山'},
         Console.GCN
     )
-    BDCI = (
+    BDCT = (
         90,
         'Daisy Circuit',
         'デイジーサーキット',
-        'bDCi',
+        'bDCt',
         'デイサ',
-        {'bdci', 'dci', 'ﾃﾞｲｼﾞｰｻｰｷｯﾄ', 'ﾃﾞｲｻ'},
+        {'bdct', 'dct', 'bdci', 'dci', 'ﾃﾞｲｼﾞｰｻｰｷｯﾄ', 'ﾃﾞｲｻ'},
         Console.WII
     )
     BPPC = (
